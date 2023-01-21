@@ -6,10 +6,10 @@ public class TicketManagerTest {
     TicketRepository repo = new TicketRepository();
     TicketManager manager = new TicketManager(repo);
 
-    Ticket ticket1 = new Ticket(1, 5000, "DME", "LED", 500);
-    Ticket ticket2 = new Ticket(2, 1500, "DME", "LED", 500);
-    Ticket ticket3 = new Ticket(3, 4800, "VKO", "LED", 200);
-    Ticket ticket4 = new Ticket(4, 3500, "DME", "LED", 150);
+    Ticket ticket1 = new Ticket(1, 3000, "DME", "LED", 100);
+    Ticket ticket2 = new Ticket(2, 2490, "DME", "LED", 100);
+    Ticket ticket3 = new Ticket(3, 2990, "VKO", "LED", 85);
+    Ticket ticket4 = new Ticket(4, 2935, "DME", "LED", 80);
 
     @BeforeEach
     public void setUp() {
@@ -62,5 +62,6 @@ public class TicketManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
-
 }
+
+
